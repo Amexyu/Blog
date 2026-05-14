@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>投稿</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>投稿</h1>
+    </header>
+
+    <main class="post">
+      <div class="user-info">
+        <img src="https://i.pravatar.cc/40?img=1" />
+        <p>田中 太郎</p>
+      </div>
+
+      <div>
+        <form class="form" action="/submit" method="post">
+          <label class="title" for="title">タイトル:</label>
+          <input type="text" id="title" name="title" required />
+          <br />
+
+          <label class="image" for="image">画像:</label>
+          <input type="file" id="image" name="image" accept="image/*" />
+          <br />
+
+          <label class="content" for="content">内容:</label>
+          <textarea id="content" name="content" required></textarea>
+          <br />
+
+          <label class="tag" for="tag">タグ:</label>
+          <input type="button" id="tag" name="tag" value="movie" />
+          <br />
+
+          <input class="post-btn" type="submit" value="投稿" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
