@@ -1,0 +1,108 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+  background:#f5f6f8;
+}
+
+/* Header */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.header h1{
+  font-size:26px;
+}
+
+.post-btn{
+  background:#2d6cff;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.post-btn:hover{
+  background:#1f54d1;
+}
+
+/* Masonry Grid */
+.grid{
+  column-count:4;
+  column-gap:20px;
+  padding:30px 40px;
+}
+
+@media(max-width:1200px){
+  .grid{ column-count:3; }
+}
+@media(max-width:800px){
+  .grid{ column-count:2; }
+}
+@media(max-width:500px){
+  .grid{ column-count:1; }
+}
+
+/* Card */
+.card{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  margin-bottom:20px;
+  display:inline-block;
+  width:100%;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+.card img{
+  width:100%;
+  display:block;
+}
+
+/* Card Content */
+.card-body{
+  padding:14px;
+}
+
+.category{
+  font-size:12px;
+  color:#777;
+}
+
+.card-body h3{
+  font-size:16px;
+  margin:6px 0 10px;
+}
+
+/* User */
+.user{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.user img{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+}
